@@ -6,9 +6,13 @@ export default function Home() {
   <div>
     <Navbar/>
     <div className='first'>
-      <div className='bg-gray-900 w-[100%] h-[90vh] opacity-60'>
+    
+      {/* <div className='bg-gray-900 w-[100%] h-[90vh] opacity-60'>
+      </div> */}
 
-      </div>
+
+        <h1 className='text-9xl  font-bold text-white'>GOURMET FOOD </h1>
+
 
     </div>
   </div>
