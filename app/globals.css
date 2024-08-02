@@ -7,7 +7,7 @@
     background: url(../public/Container.png)  no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 90vh;
+    min-height: 1250px;
     position: relative;
 
 }
@@ -15,7 +15,7 @@
     content: '';
     position: absolute;
     top: 0;left: 0;
-    background-color: rgba(59, 53, 53, 0.6);
+    background-color: rgba(16, 16, 16, 0.6);
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -23,5 +23,32 @@
 }
 .first h1{
 position: relative;
+top: 120px;
+
     z-index: 1;
 }
+.first h2{
+    position: relative;
+    top: 150px;
+    z-index: 1;
+}
+.first h3{
+    position: relative;
+    top: 180px;
+    z-index: 1;
+}
+.first p{
+    position: relative;
+    top: 210px;
+    z-index: 1;
+}
+.first .btns{
+    position: relative;
+    top: 260px;
+    z-index: 1;
+ 
+
+}
+
+
+
