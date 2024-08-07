@@ -14,7 +14,7 @@ export default function Home() {
         <h3 className='lg:text-9xl md:text-8xl sm:text-5xl  font-bold text-white pt-8'>YOUR DOORSTEP</h3>
         <p className='md:text-3xl sm:text-xl text-white font-bold pt-6'> Experience the Flavors of Our Signature Dishes, Made with Love <br /> and Fresh Ingredients Without Leaving Your Doorstep</p>
 
-        <div className=' flex w-[320px]  md:space-x-1 pt-6 sm:mx-[-15px] flex-wrap  '>
+        <div className=' flex w-[320px]  md:space-x-1 pt-6 sm:mx-[-15px] flex-wrap mb-24 '>
           <button className=' bg-[rgb(236,8,8)] py-4  px-8 rounded-[30px] hover:scale-105 text-white font-bold sm:my-4 sm:flex sm:mx-auto'>Order Now</button>
           <button className='border-2 border-white py-4 px-8 rounded-[30px] hover:scale-105 text-white font-bold sm:my-4 sm:flex sm:mx-auto cursor-pointer'>See Menu</button>
 
@@ -42,7 +42,7 @@ export default function Home() {
       {/* 2nd div ----------- */}
 
 
-      <div className='grid grid-cols-2 px-16 gap-5'>
+      <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 px-16 gap-5'>
         <div>
           <h1 className='text-8xl font-semibold  pt-12'>WHO WE ARE & <br /><span className='text-[rgb(236,8,8)]'>WHAT WE  DO</span></h1>
           <p className='text-3xl pr-5 pt-8 font-semibold '>At the Red Gourmet Kitchen, we have put so much love and care into every recipe to give you the very best gourmet cooking in Abuja. 
