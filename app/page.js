@@ -35,6 +35,7 @@ export default function Home() {
           </div>
 
         </div>
+          <div className="h-16"></div>
 
 
       </div>
@@ -45,14 +46,16 @@ export default function Home() {
       <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 px-16 gap-5'>
         <div>
           <h1 className='text-8xl font-semibold  pt-12'>WHO WE ARE & <br /><span className='text-[rgb(236,8,8)]'>WHAT WE  DO</span></h1>
-          <p className='text-3xl pr-5 pt-8 font-semibold '>At the Red Gourmet Kitchen, we have put so much love and care into every recipe to give you the very best gourmet cooking in Abuja. 
+          <p className='text-3xl pr-9 pt-8 leading-snug  font-semibold text-justify'>At the Red Gourmet Kitchen, we have put so much love and care into every recipe to give you the very best gourmet cooking in Abuja. 
             All our ingredients are sourced from local farmers and markets. Great produce, great food, great vibes.</p>
-          <FirstCard/>
+          <FirstCard src='/farmed.svg' title='Freshly Farmed' pera='All our ingredients are sourced from local farmers and markets. Great produce, great food, great vibes.' />
+          <FirstCard src='/ease.svg' title='Ease and Comfort' pera='Enjoy our delicious dishes from the comfort of your home with our fast and reliable delivery service.' />
+          <FirstCard src='/fresh.svg' title='Fresh and Flavorful' pera='We ensure that every meal arrives hot and fresh, preserving the quality and taste you love.' />
         </div>
         <div className='flex justify-center flex-wrap gap-5 pt-24'>
           <Image className='' src='/burger.png' width={395} height={400} alt='burger Image' />
-          <Image className='' src='/tika.png' width={455} height={430} alt='burger Image' />
-          <Image className='' src='/shawarma.png' width={419} height={389} alt='burger Image' />
+          <Image className='' src='/tika.png' width={455} height={430} alt='tika Image' />
+          <Image className='' src='/shawarma.png' width={419} height={389} alt='shawarma Image' />
         </div>
 
       </div>
