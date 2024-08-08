@@ -59,6 +59,11 @@ export default function Home() {
         </div>
 
       </div>
+
+      {/* ------------------------------3rd div ------------------ */}
+      <div>
+        
+      </div>
     </div>
   );
 }
