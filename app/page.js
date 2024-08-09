@@ -9,28 +9,28 @@ export default function Home() {
     <div>
       <Navbar />
       <div className='first md:px-32 sm:px-8  '>
-        <h1 className='lg:text-9xl md:text-8xl sm:text-5xl  font-bold text-white pt-36'>GOURMET FOOD </h1>
-        <h2 className='lg:text-9xl md:text-8xl sm:text-5xl  font-bold text-red-600 pt-8'>DELIVERED TO</h2>
-        <h3 className='lg:text-9xl md:text-8xl sm:text-5xl  font-bold text-white pt-8'>YOUR DOORSTEP</h3>
-        <p className='md:text-3xl sm:text-xl text-white font-bold pt-6'> Experience the Flavors of Our Signature Dishes, Made with Love <br /> and Fresh Ingredients Without Leaving Your Doorstep</p>
+        <h1 className='text-[85px]  font-bold text-white pt-28'>GOURMET FOOD 
+          <span className='text-[85px]  font-bold text-red-600  block'>DELIVERED TO</span>YOUR DOORSTEP </h1>
+        
+        <p className='text-[24px] text-white font-bold pt-6'> Experience the Flavors of Our Signature Dishes, Made with Love <br /> and Fresh Ingredients Without Leaving Your Doorstep</p>
 
         <div className=' flex w-[320px]  md:space-x-1 pt-6 sm:mx-[-15px] flex-wrap mb-24 '>
-          <button className=' bg-[rgb(236,8,8)] py-4  px-8 rounded-[30px] hover:scale-105 text-white font-bold sm:my-4 sm:flex sm:mx-auto'>Order Now</button>
-          <button className='border-2 border-white py-4 px-8 rounded-[30px] hover:scale-105 text-white font-bold sm:my-4 sm:flex sm:mx-auto cursor-pointer'>See Menu</button>
+          <button className=' bg-[rgb(236,8,8)] py-3  px-7 rounded-[30px] hover:scale-105 text-white font-bold sm:my-4 sm:flex sm:mx-auto'>Order Now</button>
+          <button className='border-2 border-white py-3 px-7 rounded-[30px] hover:scale-105 text-white font-bold sm:my-4 sm:flex sm:mx-auto cursor-pointer'>See Menu</button>
 
         </div>
         
-        <div className='mt-8 bg-white rounded-lg flex justify-betweem items-center md:w-[450px] sm:w-[300px] h-36 top-[300px]'>
+        <div className='mt-8 bg-white rounded-lg flex justify-betweem items-center md:w-[410px] sm:w-[300px] h-36 top-[300px]'>
           <div className='md:ml-6 sm:ml-1'>
-            <Image src='/Group 3.svg' width={60} height={60} alt='Rating Icon' />
+            <Image src='/Group 3.svg' width={57} height={52} alt='Rating Icon' />
           </div>
           <div className='md:ml-9 sm:ml-3'>
 
-            <p className='text-gray-700 text-xl font-bold py-2 '>Google Rating</p>
-            <h1 className='text-3xl text-[rgb(264,254,0)] font-bold flex py-2'>4.8  <span className='flex md:ml-2 sm:ml-[5px] mb-2'>
+            <p className='text-gray-700 text-[20px] font-bold py-1 '>Google Rating</p>
+            <h1 className='text-[26px] text-[rgb(264,254,0)] font-bold flex py-1'>4.8  <span className='flex md:ml-2 sm:ml-[5px] mb-2'>
               <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
             </span></h1>
-            <p className='text-gray-700 text-xl font-bold py-2 '>See Our all services</p>
+            <p className='text-gray-700 text-[18px] font-bold py-1 '>See Our all services</p>
 
           </div>
 
