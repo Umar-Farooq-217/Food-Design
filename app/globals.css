@@ -7,3 +7,30 @@
     width: 100%;
     height: auto;
 }
+
+.secondContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+@media(max-width:500px){
+
+
+
+
+
+
+      
+}
+@media(max-width:780px){
+
+
+
+
+
+
+
+
+}
+

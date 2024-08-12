@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div className='first md:px-32 sm:px-8  '>
-        <h1 className='text-[85px]  font-bold text-white pt-28'>GOURMET FOOD 
-          <span className='text-[85px]  font-bold text-red-600  block'>DELIVERED TO</span>YOUR DOORSTEP </h1>
+      <div className='first md:px-32 sm:px-1  '>
+        <h1 className='md:text-[80px] sm:text-[60px]  font-bold text-white pt-28'>GOURMET FOOD 
+          <span className='   font-bold text-red-600  block'>DELIVERED TO</span>YOUR DOORSTEP </h1>
         
         <p className='text-[24px] text-white font-bold pt-6'> Experience the Flavors of Our Signature Dishes, Made with Love <br /> and Fresh Ingredients Without Leaving Your Doorstep</p>
 
@@ -43,26 +43,36 @@ export default function Home() {
       {/* 2nd div ----------- */}
 
 
-      <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 px-16 gap-5'>
+      <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 md:px-16 sm:px-2'>
         <div>
-          <h1 className='text-8xl font-semibold  pt-12'>WHO WE ARE & <br /><span className='text-[rgb(236,8,8)]'>WHAT WE  DO</span></h1>
-          <p className='text-3xl pr-9 pt-8 leading-snug  font-semibold text-justify'>At the Red Gourmet Kitchen, we have put so much love and care into every recipe to give you the very best gourmet cooking in Abuja. 
+          <h1 className='text-[65px] font-semibold  pt-12'>WHO WE ARE & <br /><span className='text-[rgb(236,8,8)]'>WHAT WE  DO</span></h1>
+          <p className='text-[24px] pr-9 pt-8 leading-snug  font-semibold text-justify mb-5'>At the Red Gourmet Kitchen, we have put so much love and care into every recipe to give you the very best gourmet cooking in Abuja. 
             All our ingredients are sourced from local farmers and markets. Great produce, great food, great vibes.</p>
           <FirstCard src='/farmed.svg' title='Freshly Farmed' pera='All our ingredients are sourced from local farmers and markets. Great produce, great food, great vibes.' />
           <FirstCard src='/ease.svg' title='Ease and Comfort' pera='Enjoy our delicious dishes from the comfort of your home with our fast and reliable delivery service.' />
           <FirstCard src='/fresh.svg' title='Fresh and Flavorful' pera='We ensure that every meal arrives hot and fresh, preserving the quality and taste you love.' />
         </div>
-        <div className='flex justify-center flex-wrap gap-5 pt-24'>
-          <Image className='' src='/burger.png' width={395} height={400} alt='burger Image' />
-          <Image className='' src='/tika.png' width={455} height={430} alt='tika Image' />
-          <Image className='' src='/shawarma.png' width={419} height={389} alt='shawarma Image' />
-        </div>
+        <div className='pt-24'>
+  {/* Container for the first two images */}
+  <div className='flex flex-wrap justify-center md:justify-between md:px-3 sm:px-0 pt-5 '>
+    <Image className='p-3 w-[500px] h-[370px] basis-[220px] lg:w-[50%] md:flex-grow' src='/burger.png' width={395} height={400} alt='burger Image' />
+    <Image className='p-3 w-[500px] h-[370px] basis-[220px] lg:w-[50%] md:flex-grow' src='/tika.png' width={455} height={430} alt='tika Image' />
+  </div>
+
+  {/* Third image centered below the first two images */}
+  <div className='flex justify-center px-3'>
+    <Image className='p-3 lg:w-[60%] md:w-[50%] sm:flex-grow lg:mx-20 md:mx-10 h-[370px] ' src='/shawarma.png' width={419} height={389} alt='shawarma Image' />
+  </div>
+</div>
+
 
       </div>
 
       {/* ------------------------------3rd div ------------------ */}
       <div>
-        
+
+        <h1 className='text-[65px] font-bold text-center '>Explore Our Delicious <span>Menu Sections</span></h1>
+      
       </div>
     </div>
   );

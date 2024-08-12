@@ -8,9 +8,10 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        'sm': '340px',
-        'md':'490px',
-        'lg':'790px'
+        'sm': '320px',
+        'md':'768px',
+        'lg':'1024px',
+       
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
