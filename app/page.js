@@ -4,13 +4,15 @@ import { FaStar } from "react-icons/fa6";
 
 import './globals.css'
 import FirstCard from "./components/firstCard/FirstCard";
+import SecondCard from "./components/secondCard/SecondCard";
+import ThirdCard from "./components/thirdCard/ThirdCard";
 export default function Home() {
   return (
     <div>
       <Navbar />
       <div className='first md:px-32 sm:px-1  '>
-        <h1 className='md:text-[80px] sm:text-[60px]  font-bold text-white pt-28'>GOURMET FOOD 
-          <span className='   font-bold text-red-600  block'>DELIVERED TO</span>YOUR DOORSTEP </h1>
+        <h1 className='md:text-[85px] sm:text-[60px]  font-bold text-white pt-28'>GOURMET FOOD 
+          <span className='   font-bold text-[rgb(236,8,8)]  block'>DELIVERED TO</span>YOUR DOORSTEP </h1>
         
         <p className='text-[24px] text-white font-bold pt-6'> Experience the Flavors of Our Signature Dishes, Made with Love <br /> and Fresh Ingredients Without Leaving Your Doorstep</p>
 
@@ -69,11 +71,40 @@ export default function Home() {
       </div>
 
       {/* ------------------------------3rd div ------------------ */}
-      <div>
+      <div className='pt-10'>
 
-        <h1 className='text-[65px] font-bold text-center '>Explore Our Delicious <span>Menu Sections</span></h1>
-      
+        <h1 className='text-[65px] font-bold text-center  '>Explore Our Delicious <span className='text-[rgb(236,8,8)]'>Menu Sections</span></h1>
+      <p className='text-[24px] text-center lg:px-96 pt-3'>At our restaurant, we offer a variety of services to cater to your dining preferences. Whether you prefer to dine-in,
+         takeout, or have your food delivered, we have you covered.</p>
+         <div className='grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-5 md:px-16 sm:px-4 mt-5  '>
+          <SecondCard src='/card2.png' heading='Vegetables Steaks'
+           pera='Our vegetable steak is a hearty blend of grilled veggies, seasoned to perfection and served with a savory sauce.' />
+          <SecondCard src='/card1.png' heading='Fried Potatoes'
+           pera='Our Crispy and golden, our fried potatoes are a perfect blend of crunch and flavor.' />
+          <SecondCard src='/card3.png' heading='Vegetables Steaks'
+           pera='Our Juicy and savory, our hamburger features a perfectly grilled patty topped with fresh ingredients.' />
+
+
+
+         </div>
+
       </div>
+
+
+      {/* ---------------------4th------------------ */}
+      <div>
+        <h1 className='text-[65px] font-bold text-center pt-28'>What <span className='text-[rgb(236,8,8)]'>Customers Say</span></h1>
+        <p className='text-[24px] font-semibold pt-7 text-center'>Read testimonials from our satisfied Customers</p>
+        <div className='bg-black'>
+          <ThirdCard/>
+
+        </div>
+      </div>
+
+
+
+
+
     </div>
   );
 }
