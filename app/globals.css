@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.first {    background: url(../public/Container.png) no-repeat center;
+.first {   
+     background: url(../public/Container.png) no-repeat center;
     background-size: cover;
     width: 100%;
     height: auto;
@@ -12,25 +13,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
-
-@media(max-width:500px){
-
-
-
-
-
-
-      
+.fifth{
+   
+    background: url(../public/van.webp) no-repeat ;
+    background-position: center;
+    background-size: cover;    
+    
 }
-@media(max-width:780px){
-
-
-
-
-
-
-
-
-}
-

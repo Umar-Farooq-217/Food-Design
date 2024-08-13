@@ -6,6 +6,10 @@ import './globals.css'
 import FirstCard from "./components/firstCard/FirstCard";
 import SecondCard from "./components/secondCard/SecondCard";
 import ThirdCard from "./components/thirdCard/ThirdCard";
+import { FaChevronLeft } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa6";
+
+
 export default function Home() {
   return (
     <div>
@@ -95,10 +99,72 @@ export default function Home() {
       <div>
         <h1 className='text-[65px] font-bold text-center pt-28'>What <span className='text-[rgb(236,8,8)]'>Customers Say</span></h1>
         <p className='text-[24px] font-semibold pt-7 text-center'>Read testimonials from our satisfied Customers</p>
-        <div className='bg-black'>
-          <ThirdCard/>
+        
+        <div className='bg-black px-20'>
+          <div  className=' grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:gap-20 md:gap-10 pt-20 mt-10'>
+          <ThirdCard pera='The food here is absolutely amazing!I keep coming back for more. Highly recommended' />
+          <ThirdCard pera='I loved everything I tasted and all I can say is that you have to go taste everything 
+          for yourself. The Red Gourmet Kitchen really took the time to curate an experience' />
+</div>
+<div className='flex justify-center items-center gap-7 pt-12 pb-16'>
+          <div className='bg-[rgb(191,16,16)] w-10 h-10 rounded-full  flex justify-center items-center hover:scale-110'>
+          <FaChevronLeft className='text-2xl text-black  rounded-full  '/>
+
+          </div>
+          <div className='bg-[rgb(191,16,16)] w-10 h-10 rounded-full  flex justify-center items-center hover:scale-110'>
+          <FaChevronRight className='text-2xl text-black  rounded-full  ' />
+          </div>
+        </div>
+        </div>
+        
+      </div>
+
+      {/* ----------------------5th------------------- */}
+
+      <div className='fifth grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 py-8'>
+        <div className='px-10'>
+          <h1 className='text-[65px] font-bold text-white pt-24 lg:mr-36 md:mr20 sm:mr-10'>Discover Our Tasty <br /> Creation</h1>
+          <button className=' bg-[rgb(236,8,8)] py-2  px-8 rounded-[30px] hover:scale-105 text-white
+         font-bold sm:my-4 '>Order Now</button>
+        
+        <div>
+          <div className='flex items-center pt-3 '>
+          <Image src='/Location.png' width={40} height={42} alt='pic' />
+         <p className='text-white text-[24px] font-bold pl-4'>Location</p>
+          </div>
+          <p className='text-[18px] font-semibold text-white lg:mr-36 md:mr20 sm:mr-10 pt-3'>990 Sterling Bank Boulevard
+Opp Tuwo Place, Behind Fraser Suite, Central Area.
+Abuja</p>
+<div className='flex items-center pt-5 '>
+<Image src='/Ringer.png' width={40} height={42} alt='pic' />
+<p className='text-white text-[24px] font-bold pl-4'>986345680</p>
+</div>
+
+        </div></div>
+        <div className='flex justify-center items-end'>
+        <Image src='/glass.png' width={600} height={456} alt='pic' />
 
         </div>
+
+      </div>
+
+
+      {/* ----------------------------6th----------------------- */}
+
+      <div className='bg-black'>
+        <h1 className='text-[60px] font-bold text-white text-center lg:px-52 pt-5'>
+          Frequently Asked <span className='text-[rgb(236,8,8)]'>Questions & Answers</span>
+        </h1>
+        <div className="border-2px border-white">
+          <div className="flex">
+            <div className="">
+              <h1 className='text-[20px] text-white font-semibold '>How do I place an order for delivery?</h1>
+              <h1 className='text-[18px] text-white  '>Placing an order is easy! Visit our website, browse 
+                our menu, add items to your cart, and proceed to checkout. You can also call us directly to place your order.</h1>
+            </div>
+          </div>
+        </div>
+
       </div>
 
 
