@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa6";
 
 export default function FirstCard(props) {
   return (
-    <div className='bg-[rgb(191,16,16)] w-full rounded-xl flex flex-col md:flex-row justify-center items-center mb-7 py-2'>
+    <div className='bg-[rgb(191,16,16)] w-full rounded-xl flex flex-col md:flex-row justify-center items-center mb-7 py-2 secondItems'>
       <div className='flex-shrink-0'>
         <Image className='w-20 h-28' src={props.src} width={82} height={97} alt='pic' />
       </div>

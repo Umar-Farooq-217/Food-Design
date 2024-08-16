@@ -4,12 +4,12 @@ import Image from 'next/image'
 export default function Footer() {
   return (
         <div className="bg-black text-white">
-    <div className='bg-black text-white grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-1 p-5 '>
+    <div className='bg-black text-white grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-1 p-5 secondItems'>
         <div className="pt-5">
             <Image className='bg-white rounded-full p-1 ml-5 w-[140px] h-[130px]' src='/logo.png' width={160} height={160} alt='logo' />
             <h1 className="text-[30px] font-bold pt-5">RedGourmetKitchen</h1>
         </div>
-        <div className="text-[22px] pt-10 ">
+        <div className="text-[22px] pt-10 secondItems ">
             <h1 className="text-[30px] font-bold">Company</h1>
             <p className="py-2">About Us</p>
             <p className="py-2">Contact Us</p>
@@ -18,7 +18,7 @@ export default function Footer() {
             <p className="py-2">Privacy Policy</p>
 
         </div>
-        <div className="pt-10">
+        <div className="pt-10 secondItems">
        <h1 className="text-[30px] font-bold">Adress</h1>
         <div>
             <div className='flex items-center pt-3 '>
@@ -36,16 +36,16 @@ export default function Footer() {
           </div>
         </div>
         <div className="pt-10">
-        <h1 className="text-[30px]  font-bold">Follow Us</h1>
+        <h1 className="text-[30px]  font-bold secondItems     ">Follow Us</h1>
 
-            <div className="flex gap-2">
+            <div className="flex gap-2 secondItems">
                 <Image className='hover:scale-105' src="/Facebook.svg" width={50} height={60} alt="facebook" />
                 <Image className='hover:scale-105' src="/TwitterX.svg" width={50} height={60} alt="Twittet" />
                 <Image className='hover:scale-105' src="/Instagram.svg" width={50} height={60} alt="Instagram" />
             </div>
         </div>
         </div>
-        <p className="text-[24px ] font-bold pt-20 pb-10 text-center">©2024 by Red Dish Chronicles Ltd</p>
+        <p className="text-[24px ] font-bold pt-20 pb-10 text-center ">©2024 by Red Dish Chronicles Ltd</p>
       
     </div>
   )
