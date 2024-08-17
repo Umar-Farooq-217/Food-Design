@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa6";
 
 export default function ThirdCard(props) {
   return (
-    <div className='bg-white rounded-2xl flex flex-col hover:scale-105 transition-all 1s ease-in secondItems '>
+    <div className='bg-white rounded-2xl flex flex-col hover:scale-105 transition-all 1s ease-in secondItems sm:mt-5'>
       <p className='text-[24px] font-bold pt-10 mx-5 flex-grow'>{props.pera}</p>
       <div>
         <div className='mx-5 pt-7 flex justify-between flex-wrap pb-10'> 

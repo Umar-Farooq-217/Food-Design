@@ -7,7 +7,7 @@ export default function Footer() {
     <div className='bg-black text-white grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-1 p-5 secondItems'>
         <div className="pt-5">
             <Image className='bg-white rounded-full p-1 ml-5 w-[140px] h-[130px]' src='/logo.png' width={160} height={160} alt='logo' />
-            <h1 className="text-[30px] font-bold pt-5">RedGourmetKitchen</h1>
+            <h1 className="text-[30px] font-bold pt-5">Red Gourmet Kitchen</h1>
         </div>
         <div className="text-[22px] pt-10 secondItems ">
             <h1 className="text-[30px] font-bold">Company</h1>

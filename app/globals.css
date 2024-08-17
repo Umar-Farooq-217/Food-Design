@@ -3,20 +3,30 @@
 @tailwind utilities;
 
 .first {   
-     background: url(../public/Container.png) no-repeat center;
-    background-size: cover;
+     /* background: url(../public/Container.png) no-repeat center; */
+     position: relative;
+  display: inline-block;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5), /* Overlay color */
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../public/Container.png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
     width: 100%;
     height: auto;
    position: relative;
    z-index: 2;
+   box-shadow:  black;
+   
    
 }
 .firstText {
     text-shadow: 9px 9px 10px black;
 }
-.secondText {
+/* .secondText {
     text-shadow: 9px 9px 10px rgb(245, 8, 8);
-}
+} */
 .first::before{
     content: '';
     position: absolute;
@@ -30,10 +40,14 @@
     grid-template-columns: 1fr 1fr;
 }
 .fifth{
-   
-    background: url(../public/van.webp) no-repeat ;
-    background-position: center;
-    background-size: cover;    
+    position: relative;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5), /* Overlay color */
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../public/Container.png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;   
     
 }
 
@@ -69,5 +83,5 @@ html{
 .secondItems{
     animation: appear  linear;
     animation-timeline: view();
-    animation-range: entry 0 ;
+    animation-range: entry 0  ;
 }
